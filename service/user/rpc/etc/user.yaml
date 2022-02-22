@@ -1,0 +1,17 @@
+Name: user.rpc
+ListenOn: 0.0.0.0:9045
+
+Etcd:
+  Hosts:
+    - 127.0.0.1:2379
+  Key: user.rpc
+
+Mysql:
+  DataSource: root:uUiknmbGFDBIu9801827654@tcp(127.0.0.1:3306)/go-zero-mall?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
+
+CacheRedis:
+  - Host: 127.0.0.1:6388
+    Type: node
+    Pass:
+
+Salt: HWVOFkGgPTryzICwd7qnJaZR9KQ2i8xe
